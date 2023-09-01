@@ -5,7 +5,10 @@ public class PhoneBook {
     private Map<String, String> phones = new HashMap<>();
 
     public int add(String name, String number){
-        return 0;
+        if (!phones.containsKey(name)){
+            phones.put(name, number);
+        }
+        return phones.size();
     }
 
     public Map<String, String> getPhones() {
