@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -24,6 +25,10 @@ public class PhoneBook {
 
     public String findByName(String name) {
         return phones.get(name);
+    }
+
+    public List<String> printAllNames(){
+        return null;
     }
 
     public Map<String, String> getPhones() {

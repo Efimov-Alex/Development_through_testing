@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -61,5 +63,15 @@ public class PhoneBookTest {
         phoneBook.add("Никита", "+79153856724");
 
         assertThat(phoneBook.findByName("Никита"), equalTo("+79153856724"));
+    }
+
+    @Test
+    public void testPrintAllNamesSecond() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Петя", "+79456739878");
+        phoneBook.add("Вика", "+79153856723");
+        phoneBook.add("Никита", "+79153856724");
+
+        assertThat(phoneBook.printAllNames(), equalTo(List.of("Вика", "Никита", "Петя")));
     }
 }
