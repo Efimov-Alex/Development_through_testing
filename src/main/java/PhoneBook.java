@@ -22,6 +22,10 @@ public class PhoneBook {
         return result.get();
     }
 
+    public String findByName(String name){
+        return null;
+    }
+
     public Map<String, String> getPhones() {
         return phones;
     }
