@@ -11,6 +11,10 @@ public class PhoneBook {
         return phones.size();
     }
 
+    public String findByNumber(String number){
+        return null;
+    }
+
     public Map<String, String> getPhones() {
         return phones;
     }
