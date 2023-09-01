@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class PhoneBook {
     private Map<String, String> phones = new HashMap<>();
@@ -27,8 +24,13 @@ public class PhoneBook {
         return phones.get(name);
     }
 
-    public List<String> printAllNames(){
-        return null;
+    public List<String> printAllNames() {
+        List<String> names = new ArrayList<>();
+        for (String name : phones.keySet()) {
+            names.add(name);
+            System.out.println(name);
+        }
+        return names;
     }
 
     public Map<String, String> getPhones() {
