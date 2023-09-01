@@ -66,7 +66,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testPrintAllNamesSecond() {
+    public void testPrintAllNames() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Петя", "+79456739878");
         phoneBook.add("Вика", "+79153856723");
