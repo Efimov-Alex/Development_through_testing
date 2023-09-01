@@ -1,10 +1,11 @@
 import org.junit.jupiter.api.Test;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
 public class PhoneBookTest {
     @Test
-    public void testAddFirst(){
+    public void testAddFirst() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Петя", "+79456739878");
         phoneBook.add("Вика", "+79153856723");
@@ -13,7 +14,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testAddSecond(){
+    public void testAddSecond() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Петя", "+79456739878");
         phoneBook.add("Вика", "+79153856723");
@@ -23,7 +24,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testFindByNumberFirst(){
+    public void testFindByNumberFirst() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Петя", "+79456739878");
         phoneBook.add("Вика", "+79153856723");
@@ -33,7 +34,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testFindByNumberSecond(){
+    public void testFindByNumberSecond() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Петя", "+79456739878");
         phoneBook.add("Вика", "+79153856723");
@@ -43,7 +44,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testFindByNameFirst(){
+    public void testFindByNameFirst() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Петя", "+79456739878");
         phoneBook.add("Вика", "+79153856723");
@@ -53,7 +54,7 @@ public class PhoneBookTest {
     }
 
     @Test
-    public void testFindByNameSecond(){
+    public void testFindByNameSecond() {
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Петя", "+79456739878");
         phoneBook.add("Вика", "+79153856723");
